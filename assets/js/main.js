@@ -28,7 +28,7 @@ function removeLetter(){
 }
 
 
-const textArr = ["Web Developer", "Java Engineer", "Freelancer"];
+const textArr = ["FullStack Dev", "Java Engineer", "Freelancer"];
 let currTextIndex = -1;
 text = "";
 

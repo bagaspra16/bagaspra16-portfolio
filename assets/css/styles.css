@@ -399,6 +399,12 @@ img {
 .skills__mysql {
   width: 0%;
 }
+.skills__postgresql {
+  width: 0%;
+}
+.skills__react {
+  width: 0%;
+}
 .skills__git {
   width: 0%;
 }
