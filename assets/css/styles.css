@@ -314,6 +314,9 @@ img {
   text-align: center;
   color: white;
 }
+.about__text{
+  max-width: 430px; /* Atur lebar maksimum untuk membuatnya lebih rapi di layar besar */
+}
 .about__subtitle {
   margin-bottom: var(--mb-2);
 }
