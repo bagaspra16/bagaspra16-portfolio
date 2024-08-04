@@ -315,7 +315,7 @@ img {
   color: white;
 }
 .about__text{
-  max-width: 430px;
+  max-width: 435px;
   max-height: 564px;
 }
 .about__subtitle {
@@ -520,6 +520,10 @@ input::placeholder{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: justify;
+  }
+  .about__text{
+    max-width: 435px;
+    max-height: 564px;
   }
   .skills__container {
     grid-template-columns: 0.1fr;
