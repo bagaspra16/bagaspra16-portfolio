@@ -515,7 +515,7 @@ input::placeholder{
   .about__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    text-align: initial;
+    text-align: justify;
   }
   .skills__container {
     grid-template-columns: 0.1fr;
