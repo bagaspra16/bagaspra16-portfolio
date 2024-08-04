@@ -314,10 +314,6 @@ img {
   text-align: center;
   color: white;
 }
-.about__text{
-  max-width: 435px;
-  max-height: 564px;
-}
 .about__subtitle {
   margin-bottom: var(--mb-2);
 }
@@ -498,7 +494,7 @@ input::placeholder{
     width: 200px;
   }
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 432px) {
   .home {
     padding: 4rem 0 2rem;
   }
@@ -520,10 +516,6 @@ input::placeholder{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: justify;
-  }
-  .about__text{
-    max-width: 435px;
-    max-height: 564px;
   }
   .skills__container {
     grid-template-columns: 0.1fr;
