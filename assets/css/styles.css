@@ -535,7 +535,7 @@ input::placeholder{
     justify-items: center;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 790px) {
   body {
     margin: 0;
   }
