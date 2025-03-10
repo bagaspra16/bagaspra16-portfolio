@@ -120,7 +120,7 @@ const Skills = () => {
             </div>
             <div className="skills__react"></div>
             <div>
-              <span className="skills__percentage">React JS</span>
+              <span className="skills__percentage">ReactJS</span>
             </div>
           </div>
           
