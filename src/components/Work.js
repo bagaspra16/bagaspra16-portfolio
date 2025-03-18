@@ -24,6 +24,15 @@ const Work = () => {
         <a href="https://github.com/bagaspra16/quicks-web" className="work__img">
           <img src="/assets/img/project23.png" alt="Quicks Web" style={{ height: '100%' }} />
         </a>
+        <a href="https://github.com/bagaspra16/finance-tracker" className="work__img">
+          <img src="/assets/img/project31.png" alt="Finance Tracker" style={{ height: '100%' }} />
+        </a>
+        <a href="https://github.com/bagaspra16/ramadhan-web" className="work__img">
+          <img src="/assets/img/project32.png" alt="Ramadhan Invitation Web" style={{ height: '100%' }} />
+        </a>
+        <a href="https://github.com/bagaspra16/finein" className="work__img">
+          <img src="/assets/img/project33.png" alt="Finein Web" style={{ height: '100%' }} />
+        </a>
       </div>
     </section>
   );
