@@ -12,6 +12,7 @@ import Work from './components/Work';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Preloader from './components/Preloader';
+import PDFGenerator from './components/PDFGenerator';
 
 // Styles
 import './assets/css/styles.css';
@@ -61,13 +62,14 @@ function App() {
         <div className={`app ${isLoaded ? 'loaded' : ''}`}>
           <Header />
           
-          <main className="l-main">
-            <Home />
-            <About />
-            <Skills />
-            <Work />
-            <Contact />
-          </main>
+                 <main className="l-main">
+                   <Home />
+                   <About />
+                   <Skills />
+                   <Work />
+                   <Contact />
+                   <PDFGenerator />
+                 </main>
           
           <Footer />
         </div>
