@@ -12,7 +12,6 @@ import Work from './components/Work';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Preloader from './components/Preloader';
-import PDFGenerator from './components/PDFGenerator';
 
 // Styles
 import './assets/css/styles.css';
@@ -43,10 +42,21 @@ function App() {
       });
     };
 
+    // Handle keyboard shortcuts
+    const handleKeyDown = (e) => {
+      // Ctrl+P or Cmd+P for print
+      if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
+        e.preventDefault();
+        window.print();
+      }
+    };
+
     window.addEventListener('beforeunload', handleBeforeUnload);
+    window.addEventListener('keydown', handleKeyDown);
 
     return () => {
       window.removeEventListener('beforeunload', handleBeforeUnload);
+      window.removeEventListener('keydown', handleKeyDown);
     };
   }, [isLoaded]);
 
@@ -62,14 +72,13 @@ function App() {
         <div className={`app ${isLoaded ? 'loaded' : ''}`}>
           <Header />
           
-                 <main className="l-main">
-                   <Home />
-                   <About />
-                   <Skills />
-                   <Work />
-                   <Contact />
-                   <PDFGenerator />
-                 </main>
+          <main className="l-main">
+            <Home />
+            <About />
+            <Skills />
+            <Work />
+            <Contact />
+          </main>
           
           <Footer />
         </div>
