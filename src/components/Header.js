@@ -15,38 +15,6 @@ const Header = () => {
     setShowMenu(false);
   };
 
-  const handlePrint = () => {
-    // Show a brief message before printing
-    const printMessage = document.createElement('div');
-    printMessage.style.cssText = `
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: rgba(0, 0, 0, 0.8);
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: 8px;
-      z-index: 10000;
-      font-family: 'Poppins', sans-serif;
-      font-size: 14px;
-    `;
-    printMessage.textContent = 'Opening print preview...';
-    document.body.appendChild(printMessage);
-    
-    // Remove message after a short delay
-    setTimeout(() => {
-      if (printMessage.parentNode) {
-        printMessage.parentNode.removeChild(printMessage);
-      }
-    }, 1500);
-    
-    // Trigger print
-    setTimeout(() => {
-      window.print();
-    }, 100);
-  };
-
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll('section[id]');
@@ -132,34 +100,15 @@ const Header = () => {
           </ul>
         </div>
 
-        <div className="nav__actions">
-          <button 
-            className="print-button no-print" 
-            onClick={handlePrint}
-            title="Print Portfolio"
-            style={{
-              background: 'none',
-              border: 'none',
-              color: 'white',
-              fontSize: '1.5rem',
-              cursor: 'pointer',
-              marginRight: '1rem',
-              padding: '0.5rem'
-            }}
-          >
-            <box-icon name='printer' color='white'></box-icon>
-          </button>
-          
-          <div 
-            className={`hamburger-menu ${showMenu ? 'active' : ''}`} 
-            id="nav-toggle"
-            onClick={toggleMenu}
-          >
-            <div className="hamburger-inner">
-              <span className="bar bar-1"></span>
-              <span className="bar bar-2"></span>
-              <span className="bar bar-3"></span>
-            </div>
+        <div 
+          className={`hamburger-menu ${showMenu ? 'active' : ''}`} 
+          id="nav-toggle"
+          onClick={toggleMenu}
+        >
+          <div className="hamburger-inner">
+            <span className="bar bar-1"></span>
+            <span className="bar bar-2"></span>
+            <span className="bar bar-3"></span>
           </div>
         </div>
       </nav>

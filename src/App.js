@@ -42,21 +42,10 @@ function App() {
       });
     };
 
-    // Handle keyboard shortcuts
-    const handleKeyDown = (e) => {
-      // Ctrl+P or Cmd+P for print
-      if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
-        e.preventDefault();
-        window.print();
-      }
-    };
-
     window.addEventListener('beforeunload', handleBeforeUnload);
-    window.addEventListener('keydown', handleKeyDown);
 
     return () => {
       window.removeEventListener('beforeunload', handleBeforeUnload);
-      window.removeEventListener('keydown', handleKeyDown);
     };
   }, [isLoaded]);
 

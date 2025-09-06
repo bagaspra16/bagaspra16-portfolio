@@ -69,16 +69,6 @@ const Contact = () => {
           ></textarea>
           <button type="submit" className="contact__button button">Send</button>
         </form>
-        
-        {/* Contact information for print */}
-        <div className="contact__info print-only" style={{ display: 'none' }}>
-          <h3>Get In Touch</h3>
-          <p><strong>Email:</strong> bagaspratamajunianika@gmail.com</p>
-          <p><strong>LinkedIn:</strong> linkedin.com/in/bagas-pratama-junianika</p>
-          <p><strong>GitHub:</strong> github.com/bagaspra16</p>
-          <p><strong>YouTube:</strong> youtube.com/channel/UC9Rb7-D7vhEviJUqIQxA9bg</p>
-          <p><strong>Location:</strong> Indonesia</p>
-        </div>
       </div>
     </section>
   );
